@@ -25,8 +25,7 @@ const greeting = {
   subTitle: emoji(
     "A passionate Full Stack Software Developer 🚀 having an experience of building Web, Mobile, and desktop applications with JavaScript / PHP / Java / React Native and some other cool libraries and frameworks."
   ),
-  resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+  resumeLink: "", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -47,15 +46,16 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle:
-    "A FULL STACK DEVELOPER WHO WANTS TO EXPLORE SOFTWARE DEVELOPMENT WORLD",
+  subTitle: "A FULL STACK DEVELOPER WHO EXPLORING SOFTWARE DEVELOPMENT WORLD",
   skills: [
     emoji(
-      "⚡ Develop highly interactive User Interfaces for your web, mobile, and desktop applications"
+      "⚡ Develop responsive and user friendly web, mobile, and desktop applications"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
     emoji(
-      "⚡ Integration of third party services such as Firebase / AWS / Digital Ocean"
+      "⚡ Integration of third party services like hosting / API integration / etc"
+    ),
+    emoji(
+      "⚡ Setting up and managing SQL or NoSQL databases based on the application's requirements"
     )
   ],
 
@@ -225,12 +225,12 @@ const bigProjects = {
   projects: [
     {
       image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      projectName: "Lintasarta Customer Network Data",
+      projectDesc: "Lintasarta customer network data management",
       footerLink: [
         {
           name: "Visit Website",
-          url: "http://saayahealth.com/"
+          url: "http://lintasarta.com/"
         }
         //  you can add extra buttons here.
       ]
@@ -255,57 +255,51 @@ const bigProjects = {
 
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
-  subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+  subtitle: "Achievements and Certifications that I have done !",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Figma UI UX Design Essentials",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "Figma UI / UX essential is course for beginner in UI / UX to know and grasp about the land of designing an app, the mentor daniel walter scott is capable of teaching the subject very clear and can show the good practice for beginner",
+      image: require("./assets/images/udemyLogo.png"),
+      imageAlt: "Udemy Logo",
       footerLink: [
         {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
+          name: "Certificate",
+          url: "https://www.udemy.com/certificate/UC-798ad0c7-a839-4216-830e-bead6e44d858/"
         },
         {
-          name: "Award Letter",
+          name: "Project",
           url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "Website Development with Laravel",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
+        "Developed a website based on laravel that can do transaction inside it.",
+      image: require("./assets/images/bwaLogo.png"),
       imageAlt: "Google Assistant Action Logo",
       footerLink: [
         {
-          name: "View Google Assistant Action",
+          name: "Certificate",
+          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+        },
+        {
+          name: "Project",
           url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
+      title: "Internship at Kejaksaan Tinggi Jawa Timur",
+      subtitle:
+        "Completed internship at Kejaksaan Tinggi Jawa Timur as website developer to create maping for availability of echelon position in work sub unit of Kejaksaan Tinggi Jawa Timur or known as Kejaksaan Negeri and Kejaksaan Tinggi itself.",
+      image: require("./assets/images/kejatiJatimLogo.png"),
       imageAlt: "PWA Logo",
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
+      footerLink: [{name: "Certificate", url: ""}]
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -379,7 +373,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Discuss a project or just want to say hi? My Inbox is open for all!",
   number: "+62-813-3148-7753",
   email_address: "briliantfikri@gmail.com"
 };
