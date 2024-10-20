@@ -1,11 +1,14 @@
 name: Check Format
 on:
   push:
+    branches:
+      - master
   pull_request:
-      branches:
-        - master
+    branches:
+      - master
 jobs:
   check-format:
+    if: github.ref != 'refs/heads/gh-pages' # Menambahkan kondisi untuk tidak menjalankan pada branch gh-pages
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
@@ -24,4 +27,3 @@ jobs:
       - name: Check Format
         run: |
           npm run check-format
-
