@@ -2,13 +2,13 @@ name: Check Format
 on:
   push:
     branches:
-      - master
+      - master # Hanya berjalan di branch "master"
   pull_request:
     branches:
-      - master
+      - master # Hanya berjalan di pull request pada branch "master"
 jobs:
   check-format:
-    if: github.ref != 'refs/heads/gh-pages' # Menambahkan kondisi untuk tidak menjalankan pada branch gh-pages
+    if: github.ref != 'refs/heads/gh-pages' # Pastikan job tidak berjalan di "gh-pages"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
